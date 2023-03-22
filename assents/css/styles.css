@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+:root{
+    --cor-fundo-frase:#2d2b41;
+    --cor-clara:#FFF;
+    --cor-escura:#080808;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #FFF;
+    font-family: 'Bree Serif', serif;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 12px;
+    padding: 10px;;
+}
+.area-logo{
+    height: 90px;
+    width: 90px;
+    padding: 5px;
+}
+.area-logo img{
+    height: inherit;
+    width: inherit;
+    border-radius: 45px;
+}
+
+/*Config area-info*/
+.area-info{ 
+    flex: 2;
+    background-color: var(--cor-fundo);;
+}
+.area-info .area-superior{
+    display: flex;
+    justify-content: space-between;
+}
+.area-info .area-superior .area-frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-info .area-superior .area-frase .frase{
+    border: 2px solid transparent;
+    background-color: var(--cor-fundo-frase);;
+    margin: 0px 20px 0px 30px;
+    font-size: 26px;
+    border-radius: 6px;
+}
+.area-info .area-superior .area-links img{ 
+    width: 35px;
+    height: 35px;
+}
+/*Fim das config area-info*/
+.hide{
+    display: none;
+}
+.area-navegacao{
+    background-color: var(--cor-clara);
+    color: #000;
+}
+.area-navegacao nav,
+.area-navegacao ul{
+    margin: 0px;
+    padding: 0px;
+}
+.area-navegacao ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.area-navegacao nav ul li{
+    list-style-type: none;
+    list-style: none;
+    margin-right: 15px;
+}
+.fundo-branco,
+.fundo-preto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+.fundo-branco{
+    background-color: var(--cor-clara);
+    color: #000;
+}
+.fundo-preto{
+    background-color: var(--cor-escura);
+    color: #FFF;
+}
+.fundo-branco .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       width: inherit;
+    height: inherit;
+}
+.fundo-branco.noticias{
+    margin-bottom: 20px;
+}
+.fundo-branco .noticiaA{
+    flex: 1;
+    background-image: url(../media/noticias/notiicaA.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+}
+.fundo-branco .noticiaB{
+    flex: 1;
+    background-image: url(../media/noticias/noticiaB.webp);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+}
+.fundo-preto.segunda-area{
+    height: 600px;
+}
+.fundo-branco .assunto{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000af;
+    color: #FFF;
+    width: inherit;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.fundo-branco .assunto .titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+.fundo-branco .assunto .descricao{
+    font-size: 14px;
+}
+.fundo-preto .proximo-jogo,
+.fundo-preto .tabela{
+    flex: 1;
+    height: 60vh;
+}
+.fundo-preto .proximo-jogo{
+    display: flex;
+    flex-direction: column;
+}
+.fundo-preto .proximo-jogo.assunto{
+    display: flex;
+    flex-direction: column;
+}
+.fundo-preto .proximo-jogo .assunto .pJogo{
+    border-left: 5px solid blue;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 8px;
+    font-size: 26px;
+}
+.fundo-preto .proximo-jogo .assunto .nome-campeonato{
+    background-color:  blue;
+    font-size: 18px;
+    width: 268px;
+    border-radius:12px;
+    padding:10px;
+    margin-top: 15px;
+    margin-left: 7px;
+}
+.fundo-preto .assunto .confronto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.fundo-preto .assunto .confronto .times{
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.fundo-preto .assunto .confronto .foto-times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundo-preto .assunto .confronto .foto-times img{
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    margin: 15px;
+    padding: 0px;
+}
+.fundo-preto .assunto .confronto .data-hora{
+    font-size: 20px;
+}
+.fundo-preto .tabela{
+    display: table;
+}
+.fundo-preto .tabela td,
+.fundo-preto .tabela tr{
+    padding: 8px;
+    text-align: center;
+}
+.fundo-preto .tabela td img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.fundo-preto.info-elenco{
+    display: flex;
+    flex-direction: column;
+}
+.elenco-nome{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    border-left: 6px solid blue;
+    font-size: 28px;
+    padding-left: 5px;
+}
+.elenco-jogadores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.player{
+    height: 200px;
+    width: 200px;
+    margin: 20px 40px;
+    text-align: center;
+}
+.player img{
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+}
+.player-nome,
+.player-posicao{
+    text-transform: uppercase;
+    text-align: center;
+}
+.fundo-branco.rodape .contato,
+.fundo-branco.rodape .jogue-conosco,
+.fundo-branco.rodape .creditos{
+    flex: 1;
+    padding: 3px 0px;
+    padding-left: 10px;
+    font-size: 14px;
+    text-align: center;   
+}
+.fundo-branco.rodape .jogue-conosco{
+    border-left:1px dashed #000 ;
+    border-right:1px dashed #000 ;
+}
+
+@media (max-width: 769px){
+    .menu{
+        width: 980px;
+    }
+    .fundo-branco.noticias .assunto{
+        height: 155px;
+    }
+    .fundo-branco.noticias .assunto .titulo{
+        font-size: 26px;
+    }
+    .fundo-branco.noticias .assunto .descricao{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .fundo-preto.segunda-area .proximo-jogo .assunto .pJogo{
+        font-size: 38px;
+        width: 238px;
+    }
+    .fundo-preto.segunda-area .proximo-jogo .assunto .nome-campeonato{
+        font-size: 28px;
+        width: 373px;
+    }
+    .fundo-preto.segunda-area .proximo-jogo .confronto .times{
+        font-size: 26px;
+    }
+    .fundo-preto.segunda-area .proximo-jogo .confronto .data-hora{
+        font-size: 24px;
+    }
+    .fundo-preto.segunda-area .tabela .confronto table{
+        font-size: 24px;
+    }
+    .player{
+        width: 170px;
+    }   
+}
+@media (max-width: 426px){
+    header .menu{
+        height: 160px;
+    }
+    header .menu .area-info .area-superior .area-frase .frase{
+        font-size: 38px;
+    }
+    header .area-logo{
+        height: 100px;
+        width: 100px;
+    }
+    .fundo-branco.noticias{
+        margin-bottom: 50px;
+    }
+    .fundo-preto.segunda-area {
+        height: auto;
+        display: block;
+        margin-bottom: 60px;
+    }
+    .fundo-preto .proximo-jogo, .fundo-preto .tabela{
+        height: auto;
+    }
+    .fundo-preto .proximo-jogo .assunto .pJogo{
+        width: auto;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .fundo-preto .proximo-jogo .assunto .nome-campeonato{
+        font-size: 36px;        
+        width: 488px;
+    }
+    .fundo-preto .assunto .confronto .times{
+        font-size: 40px;
+    }
+    .fundo-preto .assunto .confronto{
+        width: 615px;
+    }
+    .fundo-preto .assunto .confronto .data-hora{
+        font-size: 38px;
+    }
+    .fundo-preto .assunto .confronto .foto-times img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    .tabela .confronto table{
+        width: 100px;
+        height: 100px;
+    }
+    .tabela .confronto table {
+        zoom: 2;
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+    .fundo-preto.info-elenco .elenco-nome{
+        font-size: 50px;    
+    }
+    .fundo-preto.info-elenco .elenco-jogadores{
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-left: 80px;
+    }
+    .fundo-preto.info-elenco .elenco-jogadores .player{
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fundo-preto.info-elenco .elenco-jogadores .player img{
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 90px;
+    }
+    .fundo-preto.info-elenco .elenco-jogadores .player .player-nome,
+    .fundo-preto.info-elenco .elenco-jogadores .player .player-posicao{
+        font-size: 26px;
+    }
+    .fundo-branco.rodape .contato,
+    .fundo-branco.rodape .jogue-conosco,
+    .fundo-branco.rodape .creditos{
+        font-size: 28px;
+    }
+}
